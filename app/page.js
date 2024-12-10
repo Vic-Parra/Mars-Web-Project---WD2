@@ -1,40 +1,29 @@
-import Image from "next/image";
 import Link from "next/link";
+import Credits from "./_components/credits";
 
 export default function Home() {
   return (
-    <main>
-      {/* top part */}
-      <h1>MARTIAN VIEWS</h1>
-      <p>Beautiful pictures of mars from NASA!</p>
-      <ul>
-        <li>
-          <Link href={""}>Curiosity Rover</Link>
-        </li>
-        <li>
-          <Link href={""}>Opportunity Rover</Link>
-        </li>
-        <li>
-          <Link href={""}>Spirit Rover</Link>
-        </li>
-      </ul>
+    <main className="bg-slate-900">
+      {/* Title */}
+      <div className="bg-slate-950 p-3 mb-3">
+        <h1 className="flex justify-center text-4xl font-bold underline text-red-500 mb-2">MARS DOT NET</h1>
+        <p className="flex justify-center text-2xl text-red-600">For All Things Mars!</p> 
+      </div>
 
-      {/* Featured Pic */}
-      <h2>Random Featured Picture</h2>
+      {/* nav */}
       <div>
-        {/* -- picture API stuff here -- */}
+        <Link href={"./quiz"} className="flex justify-center text-xl text-red-700 hover:text-red-900 hover:underline">Take Me To The Quiz!</Link>
       </div>
-      
+
+      {/* main page image - links to its source*/}
+      <Link href={"https://starwalk.space/en/news/mars-the-ultimate-guide"}>
+      <img className="mt-3 rounded-2xl" src="https://starwalk.space/gallery/images/mars-the-ultimate-guide/1920x1080.jpg" />
+      </Link>
+
+
+
       {/* Credits */}
-      <h2>CREDITS</h2>
-      <div>
-        <p>Images:</p>
-        <Link href={"https://www.nasa.gov"}></Link>
-        <p>API Maintained By:</p>
-        <Link href={"https://github.com/corincerami"}>Corin Cerami</Link>
-        <p>Page Built By:</p>
-        <Link href={"https://github.com/Vic-Parra"}>Vic Parra</Link>
-      </div>
+      <Credits />
     </main>
   );
 }
