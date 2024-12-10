@@ -23,7 +23,7 @@ export default function Quiz(){
             {/* Title */}
             <div className="bg-slate-950 p-3">
                 <h1 className="flex justify-center text-4xl font-bold underline">MARS QUIZ</h1>
-                <p className="flex justify-center">Let's see how much you know about our beloved red neighbour!</p>
+                <p className="flex justify-center">Let&#39;s see how much you know about our beloved red neighbour!</p>
             </div>
 
             {/* actual quiz part */}
@@ -45,7 +45,7 @@ export default function Quiz(){
                     </div>
                 </div>
                 <div className="border-red-700 border-2 rounded-lg max-w-fit p-2 m-5 ">
-                    <p className={questionStyle}>3. How big is Mars' radius?</p>
+                    <p className={questionStyle}>3. How big is Mars&39; radius?</p>
                     <div className="flex justify-center">
                     <AlertButton message="Incorrect. Mars has a radius of 2106 miles">5000 miles</AlertButton>
                     <AlertButton message="Correct! Mars has a radius of 2106 miles">2106 miles</AlertButton>
@@ -88,7 +88,7 @@ export default function Quiz(){
                     </div>
                 </div>
                 <div className="border-red-700 border-2 rounded-lg max-w-fit p-2 m-5 ">
-                    <p className={questionStyle}>8. True or False: Mars has the same surface area as Earth's dry land</p>
+                    <p className={questionStyle}>8. True or False: Mars has the same surface area as Earth&39;s dry land</p>
                     <div className="flex justify-center">
                     <AlertButton message="Correct!">True</AlertButton>
                     <AlertButton message="Incorrect">False</AlertButton>
